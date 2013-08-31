@@ -1,0 +1,104 @@
+.i_voice_memos {
+	background: -webkit-linear-gradient(top, #0148b1 30%, #4ed4f8);
+	background:    -moz-linear-gradient(top, #0148b1 30%, #4ed4f8);
+	background:     -ms-linear-gradient(top, #0148b1 30%, #4ed4f8);
+	background:      -o-linear-gradient(top, #0148b1 30%, #4ed4f8);
+	background:         linear-gradient(top, #0148b1 30%, #4ed4f8);
+	}
+
+.i_voice_memos:before{
+	content: '';
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	display: block;
+	border-radius: 10px 10px 50% 50% / 10px 10px 5px 5px;
+	background: rgba(255,255,255,0.2);
+	z-index: 1;
+	box-shadow: inset rgba(255,255,255,0.5) 0 1px 0;
+}
+
+.i_voice_memos .mic {
+	position: absolute;
+	width: 12px;
+	height: 28px;
+	top: 8px;
+	left: 22px;
+	border-radius: 15px;
+	background: #edf2f8;
+	overflow: hidden;
+	box-shadow: rgba(0,0,0,1) 0 0 1px;
+}
+
+.i_voice_memos .mic:after, .i_voice_memos .mic:before {
+	content: '';
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	left: -10px;
+	top: -14px;
+	border-radius: 30px;
+	border: 1px solid #2765c1;
+	box-shadow: rgba(255,255,255,1) 0 1px 0;
+}
+
+.i_voice_memos .mic:before { top: -11px; }
+
+.i_voice_memos sub {
+	position: absolute;
+	width: 14px;
+	height: 12px;
+	left: 20px;
+	top: 25px;
+	border-radius: 0 0 100px 100px;
+	display: block;
+	border: 1px solid #edf2f8;
+	border-top: none;
+	box-shadow: rgba(0,0,0,1) 0 0 1px;
+}
+
+.i_voice_memos sub:after {
+	content: '';
+	position: absolute;
+	height: 1px;
+	width: 16px;
+	left: -2px;
+	top: 0;
+	border-left: 1px #edf2f8 solid;
+	border-right: 1px #edf2f8 solid;
+}
+
+.i_voice_memos sub:before {
+	content: '';
+	position: absolute;
+	height: 3px;
+	width: 18px;
+	left: -3px;
+	top: -1px;
+	border-left: 1px #edf2f8 solid;
+	border-right: 1px #edf2f8 solid;
+}
+
+.i_voice_memos sup {
+	position: absolute;
+	display: block;
+	width: 20px;
+	height: 6px;
+	left: 32.5%;
+	top: 43px;
+	background: #fff;
+	border-radius: 10px 10px 10px 10px / 3px 3px 3px 3px;
+	box-shadow: rgba(0,0,0,0.5) 0 0 2px, inset rgba(0,0,0,0.2) 0 -1px 0;
+}
+
+.i_voice_memos sup:after {
+	content: '';
+	position: absolute;
+	height: 4px;
+	width: 1px;
+	left: 48%;
+	top: -4px;
+	background: #fff;
+	border-radius: 0 0 2px 2px;
+	box-shadow: #2a98e4 0 0 0 1px;
+}

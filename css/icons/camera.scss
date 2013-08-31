@@ -1,0 +1,140 @@
+.i_camera {
+	background: -webkit-linear-gradient(top, #f3f3f4, #909397);
+	background:    -moz-linear-gradient(top, #f3f3f4, #909397);
+	background:     -ms-linear-gradient(top, #f3f3f4, #909397);
+	background:      -o-linear-gradient(top, #f3f3f4, #909397);
+	background:         linear-gradient(top, #f3f3f4, #909397);
+	}
+
+.i_camera:before {
+	content: '';
+	position: absolute;
+	width: 34px;
+	height: 34px;
+	left: 11px;
+	top: 11px;
+	border-radius: 35px;
+	background: -webkit-linear-gradient(top, #050505, #3a3a3a);
+	background:    -moz-linear-gradient(top, #050505, #3a3a3a);
+	background:     -ms-linear-gradient(top, #050505, #3a3a3a);
+	background:      -o-linear-gradient(top, #050505, #3a3a3a);
+	background:         linear-gradient(top, #050505, #3a3a3a);
+	}
+
+.i_camera:after{
+	content: '';
+	position: absolute;
+	width: 28px;
+	height: 28px;
+	left: 14px;
+	top: 14px;
+	border-radius: 35px;
+	background: -webkit-linear-gradient(top, #232323, #0e0e0e);
+	background:    -moz-linear-gradient(top, #232323, #0e0e0e);
+	background:     -ms-linear-gradient(top, #232323, #0e0e0e);
+	background:      -o-linear-gradient(top, #232323, #0e0e0e);
+	background:         linear-gradient(top, #232323, #0e0e0e);
+	box-shadow: inset rgba(0,0,0,1) 0 0 1px, rgba(255,255,255,0.05) 0 1px 1px;
+	}
+
+.i_camera .eye {
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	left: 17px;
+	top: 17px;
+	background: #1c2938;
+	border-radius: 30px;
+	z-index: 4;
+	box-shadow: inset rgba(0,0,0,0.7) 0 0 1px, rgba(255,255,255,0.2) 0 1px 2px, inset rgba(255,255,255,0.9) 0 0 1px, rgba(255,255,255,0.2) 0 -1px 2px ;
+}
+
+.i_camera .eye:before {
+	content: '';
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	left: 2px;
+	top: 2px;
+	background: #1c2938;
+	border-radius: 30px;
+	z-index: 4;
+	box-shadow: inset #253e55 0 0 0 1px, rgba(0,0,0,0.5) 0 0 1px;
+}
+
+.i_camera .eye:after {
+	content: '';
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	left: 5px;
+	top: 5px;
+	background: #1c2938;
+	border-radius: 30px;
+	z-index: 4;
+	box-shadow: inset #253e55 0 0 0 1px, rgba(0,0,0,0.5) 0 0 1px;
+}
+
+.i_camera .eye .blick {
+	position: absolute;
+	/*background-color: #fcfffd;*/
+	background-image: -webkit-gradient(radial, 100% 100%,100,-50% -50%,100, from(rgba(255, 255, 255, 0.00)), to(rgba(252, 255, 253, 0.2)));
+	background-image: -webkit-radial-gradient(0% 0%, rgba(252, 255, 253, 0.2), rgba(255, 255, 255, 0.00));
+	background-image:    -moz-radial-gradient(0% 0%, rgba(252, 255, 253, 0.2), rgba(255, 255, 255, 0.00));
+	background-image:     -ms-radial-gradient(0% 0%, rgba(252, 255, 253, 0.2), rgba(255, 255, 255, 0.00));
+	background-image:      -o-radial-gradient(0% 0%, rgba(252, 255, 253, 0.2), rgba(255, 255, 255, 0.00));
+	background-image:         radial-gradient(0% 0%, rgba(252, 255, 253, 0.2), rgba(255, 255, 255, 0.00));
+	width: 18px;
+	height: 18px;
+	z-index: 5;
+	border-radius: 20px;
+	left: 2px;
+	top: 2px;
+}
+
+.i_camera .eye .blick:after{
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	top: -1px;
+	left: -1px;
+	opacity: 0.7;
+	box-shadow: inset rgba(255,255,255,0.4) 0 0 6px;
+}
+
+.i_camera .eye .blick:before{
+	content: '';
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	border-radius: 5px;
+	top: 11px;
+	left: 12px;
+	opacity: 0.7;
+	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgba(255, 255, 255, 0.00)), to(rgba(252, 255, 253, 1.00)));
+	background-image: -webkit-radial-gradient(50% 50%, rgba(252, 255, 253, 1.00), rgba(255, 255, 255, 0.00));
+	background-image:    -moz-radial-gradient(50% 50%, rgba(252, 255, 253, 1.00), rgba(255, 255, 255, 0.00));
+	background-image:     -ms-radial-gradient(50% 50%, rgba(252, 255, 253, 1.00), rgba(255, 255, 255, 0.00));
+	background-image:      -o-radial-gradient(50% 50%, rgba(252, 255, 253, 1.00), rgba(255, 255, 255, 0.00));
+	background-image:         radial-gradient(50% 50%, rgba(252, 255, 253, 1.00), rgba(255, 255, 255, 0.00));
+	box-shadow: #fff 0 0 2px;
+}
+
+.i_camera .eye .blick b {
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	border-radius: 5px;
+	top: 8px;
+	left: 8px;
+	opacity: 0.5;
+	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(rgba(255, 255, 255, 0.00)), to(rgba(252, 255, 253, 1.00)));
+	background-image: -webkit-radial-gradient(50% 50%, rgba(252, 255, 253, 1.00), rgba(255, 255, 255, 0.00));
+	background-image:    -moz-radial-gradient(50% 50%, rgba(252, 255, 253, 1.00), rgba(255, 255, 255, 0.00));
+	background-image:     -ms-radial-gradient(50% 50%, rgba(252, 255, 253, 1.00), rgba(255, 255, 255, 0.00));
+	background-image:      -o-radial-gradient(50% 50%, rgba(252, 255, 253, 1.00), rgba(255, 255, 255, 0.00));
+	background-image:         radial-gradient(50% 50%, rgba(252, 255, 253, 1.00), rgba(255, 255, 255, 0.00));
+	box-shadow: #fff 0 0 2px;
+}

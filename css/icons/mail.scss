@@ -1,0 +1,147 @@
+.i_mail {
+	background: -webkit-linear-gradient(top, #0148b1 30%, #4ed4f8);
+	background:         linear-gradient(to bottom, #0148b1 30%, #4ed4f8);
+	}
+
+.i_mail:before{
+	content: '';
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	display: block;
+	border-radius: 10px 10px 50% 50% / 10px 10px 5px 5px;
+	background: rgba(255,255,255,0.2);
+	z-index: 1;
+	box-shadow: inset rgba(255,255,255,0.5) 0 1px 0;
+}
+
+.i_mail .mail {
+	width: 38px;
+	height: 23px;
+	position: absolute;
+	display: block;
+	z-index: 1;
+	left: 9px;
+	top: 16px;
+	background: -webkit-linear-gradient(top, #f8f8f9, #e6e8ec);
+	background:         linear-gradient(to bottom, #f8f8f9, #e6e8ec);
+	box-shadow: rgba(0,0,0,0.2) 0 1px 1px;
+	overflow: hidden;
+}
+
+.i_mail .mail .mail_top {
+	position: absolute;
+	width: 28px;
+	height: 28px;
+	left: 13%;
+	top: -17px;
+	background: #fcfcfc;
+	box-shadow: rgba(0,0,0,0.9) 0 0 1px;
+	-webkit-transform: rotate(-36deg) skew(20deg);
+	-moz-transform: rotate(-36deg) skew(20deg);
+	-ms-transform: rotate(-36deg) skew(20deg);
+	-o-transform: rotate(-36deg) skew(20deg);
+	transform: rotate(-36deg) skew(20deg);
+	z-index: 50000;
+}
+
+.i_mail .mail .mail_top:before {
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	left: 0;
+	bottom: 0;
+	box-shadow: rgba(0,0,0,0.2) -1px 1px 1px;
+	-webkit-transform: rotate(-4deg) skew(-8deg);
+	-moz-transform: rotate(-4deg) skew(-8deg);
+	-ms-transform: rotate(-4deg) skew(-8deg);
+	-o-transform: rotate(-4deg) skew(-8deg);
+	transform: rotate(-4deg) skew(-8deg);
+}
+
+.i_mail .mail .mail_bottom {
+	position: absolute;
+	width: 28px;
+	height: 28px;
+	left: 17%;
+	top: 13px;
+	box-shadow: rgba(0,0,0,0.9) 0 0 1px;
+	-webkit-transform: rotate(-34deg) skew(20deg);
+	-moz-transform: rotate(-34deg) skew(20deg);
+	-ms-transform: rotate(-34deg) skew(20deg);
+	-o-transform: rotate(-34deg) skew(20deg);
+	transform: rotate(-34deg) skew(20deg);
+	z-index: 4;
+}
+
+.i_mail .clouds, .i_mail .clouds2 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 11px;
+	top: 1px;
+	-webkit-transform: scaleX(1.3) rotate(10deg);
+	-moz-transform: scaleX(1.3) rotate(10deg);
+	-ms-transform: scaleX(1.3) rotate(10deg);
+	-o-transform: scaleX(1.3) rotate(10deg);
+	transform: scaleX(1.3) rotate(10deg);
+}
+
+.i_mail .clouds2 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 5px;
+	top: 30px;
+	-webkit-transform: scaleX(1.3) rotate(190deg);
+	-moz-transform: scaleX(1.3) rotate(190deg);
+	-ms-transform: scaleX(1.3) rotate(190deg);
+	-o-transform: scaleX(1.3) rotate(190deg);
+	transform: scaleX(1.3) rotate(190deg);
+}
+
+.i_mail .clouds b, .i_mail .clouds2 b {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 5px;
+	display: block;
+	height: 5px;
+	border-radius: 20px;
+	background-image: -webkit-radial-gradient(50% 50%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.00));
+	background-image:         radial-gradient(50% 50%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.00));
+}
+
+.i_mail .clouds b:nth-child(1), .i_mail .clouds2 b:nth-child(1) { bottom: 10px; left: 20px}
+.i_mail .clouds b:nth-child(2), .i_mail .clouds2 b:nth-child(2) { bottom: 9px; left: 16px}
+.i_mail .clouds b:nth-child(3), .i_mail .clouds2 b:nth-child(3) { bottom: 8px; left: 11px}
+.i_mail .clouds b:nth-child(4), .i_mail .clouds2 b:nth-child(4) { bottom: 6px; left: 14px}
+.i_mail .clouds b:nth-child(5), .i_mail .clouds2 b:nth-child(5) { bottom: 5px; left: 8px}
+.i_mail .clouds b:nth-child(6), .i_mail .clouds2 b:nth-child(6) { bottom: 3px; left: 5px}
+.i_mail .clouds b:nth-child(7), .i_mail .clouds2 b:nth-child(7) { bottom: 7px; left: 4px}
+.i_mail .clouds b:nth-child(8), .i_mail .clouds2 b:nth-child(8) { bottom: 4px; left: 12px}
+.i_mail .clouds b:nth-child(9), .i_mail .clouds2 b:nth-child(9) { bottom: 4px; left: 16px}
+.i_mail .clouds b:nth-child(10), .i_mail .clouds2 b:nth-child(10) { bottom: 4px; left: 4px}
+
+.i_mail .clouds b:nth-child(11), .i_mail .clouds2 b:nth-child(11) { bottom: 2px; left: 2px}
+.i_mail .clouds b:nth-child(12), .i_mail .clouds2 b:nth-child(12) { bottom: 4px; left: 3px}
+.i_mail .clouds b:nth-child(13), .i_mail .clouds2 b:nth-child(13) { bottom: 0px; left: 4px}
+.i_mail .clouds b:nth-child(14), .i_mail .clouds2 b:nth-child(14) { bottom: 0px; left: 8px}
+.i_mail .clouds b:nth-child(15), .i_mail .clouds2 b:nth-child(15) { bottom: 0px; left: 12px}
+.i_mail .clouds b:nth-child(16), .i_mail .clouds2 b:nth-child(16) { bottom: 0px; left: 15px}
+.i_mail .clouds b:nth-child(17), .i_mail .clouds2 b:nth-child(17) { bottom: 0px; left: 18px}
+.i_mail .clouds b:nth-child(18), .i_mail .clouds2 b:nth-child(18) { bottom: 4px; left: 19px}
+.i_mail .clouds b:nth-child(19), .i_mail .clouds2 b:nth-child(19) { bottom: 4px; left: 16px}
+.i_mail .clouds b:nth-child(20), .i_mail .clouds2 b:nth-child(20) { bottom: 4px; left: 22px}
+
+.i_mail .clouds b:nth-child(21), .i_mail .clouds2 b:nth-child(21) { bottom: 0px; left: 24px}
+.i_mail .clouds b:nth-child(22), .i_mail .clouds2 b:nth-child(22) { bottom: 2px; left: 22px}
+.i_mail .clouds b:nth-child(23), .i_mail .clouds2 b:nth-child(23) { bottom: 5px; left: 15px}
+.i_mail .clouds b:nth-child(24), .i_mail .clouds2 b:nth-child(24) { bottom: 8px; left: 4px}
+.i_mail .clouds b:nth-child(25), .i_mail .clouds2 b:nth-child(25) { bottom: 0px; left: 8px}
+.i_mail .clouds b:nth-child(26), .i_mail .clouds2 b:nth-child(26) { bottom: 0px; left: 5px}
+.i_mail .clouds b:nth-child(27), .i_mail .clouds2 b:nth-child(27) { bottom: 0px; left: 6px}
+.i_mail .clouds b:nth-child(28), .i_mail .clouds2 b:nth-child(28) { bottom: 0px; left: 12px}
+.i_mail .clouds b:nth-child(29), .i_mail .clouds2 b:nth-child(29) { bottom: 0px; left: 16px}
+.i_mail .clouds b:nth-child(30), .i_mail .clouds2 b:nth-child(30) { bottom: 8px; left: 15px}

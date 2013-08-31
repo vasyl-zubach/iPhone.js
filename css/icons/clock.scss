@@ -1,0 +1,123 @@
+.i_clock {
+	background : #000;
+	&:before {
+		content       : '';
+		width         : 100%;
+		height        : 50%;
+		position      : absolute;
+		display       : block;
+		border-radius : 10px 10px 50% 50% / 10px 10px 5px 5px;
+		background    : rgba(255, 255, 255, 0.2);
+		z-index       : 1;
+		box-shadow    : inset 0 1px 0 rgba(255, 255, 255, .5);
+	}
+	&:after {
+		content       : '';
+		width         : 48px;
+		height        : 47px;
+		border-radius : 50px;
+		left          : 4px;
+		top           : 4px;
+		position      : absolute;
+		display       : block;
+		background    : #fff;
+		z-index       : 2;
+		box-shadow    : 0 0 0 1px #000, inset 0 -4px 1px #eeeeee, inset -4px -4px 1px #eeeeee, inset 4px -4px 1px #eeeeee;
+	}
+	.gray_blick {
+		position      : absolute;
+		width         : 44px;
+		height        : 35px;
+		background    : #eee;
+		border-radius : 50% 50% 50% 50% / 10px 10px 50% 50%;
+		top           : 15px;
+		left          : 6px;
+		z-index       : 3;
+	}
+	.center_dot {
+		position      : absolute;
+		width         : 5px;
+		height        : 5px;
+		border-radius : 5px;
+		left          : 25px;
+		top           : 25px;
+		background    : #eee;
+		box-shadow    : #000 0 0 0 1px;
+		z-index       : 10;
+		&:after {
+			content       : '';
+			width         : 3px;
+			height        : 3px;
+			background    : #dd0000;
+			position      : absolute;
+			top           : 1px;
+			left          : 1px;
+			border-radius : 5px;
+			box-shadow    : inset #eee 0 0 1px;
+		}
+	}
+	.second {
+		position   : absolute;
+		left       : 27px;
+		top        : 10px;
+		width      : 1px;
+		height     : 18px;
+		z-index    : 11;
+		background : #dd0000;
+	}
+	.minute {
+		position          : absolute;
+		left              : 35px;
+		top               : 13px;
+		width             : 0px;
+		height            : 0px;
+		z-index           : 3;
+		border-bottom     : 30px solid rgba(0, 0, 0, 1);
+		border-left       : 3px solid transparent;
+		border-right      : 3px solid transparent;
+		-webkit-transform : scale(0.4) scaleY(2) scaleX(1.5) rotate(92deg);
+		-moz-transform    : scale(0.4) scaleY(2) scaleX(1.5) rotate(92deg);
+		-ms-transform     : scale(0.4) scaleY(2) scaleX(1.5) rotate(92deg);
+		-o-transform      : scale(0.4) scaleY(2) scaleX(1.5) rotate(92deg);
+		transform         : scale(0.4) scaleY(2) scaleX(1.5) rotate(92deg);
+	}
+	.hour {
+		position          : absolute;
+		left              : 19px;
+		top               : 10px;
+		width             : 0px;
+		height            : 0px;
+		z-index           : 3;
+		border-bottom     : 25px solid rgba(0, 0, 0, 1);
+		border-left       : 4px solid transparent;
+		border-right      : 4px solid transparent;
+		-webkit-transform : scale(0.4) scaleY(2) rotate(-60deg);
+		-moz-transform    : scale(0.4) scaleY(2) rotate(-60deg);
+		-ms-transform     : scale(0.4) scaleY(2) rotate(-60deg);
+		-o-transform      : scale(0.4) scaleY(2) rotate(-60deg);
+		transform         : scale(0.4) scaleY(2) rotate(-60deg);
+	}
+	ul {
+		margin  : 0;
+		padding : 0;
+	}
+	li {
+		list-style : none;
+		position   : absolute;
+		z-index    : 3;
+		font       : 6px/7px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+		color      : #000;
+		&:nth-child(1) { left : 35px; top : 7px }
+		&:nth-child(2) { left : 42px; top : 13px }
+		&:nth-child(3) { left : 45px; top : 23px }
+		&:nth-child(4) { left : 42px; top : 33px }
+		&:nth-child(5) { left : 35px; top : 41px }
+		&:nth-child(6) { left : 26px; top : 43px }
+		&:nth-child(7) { left : 17px; top : 41px }
+		&:nth-child(8) { left : 9px; top : 33px }
+		&:nth-child(9) { left : 8px; top : 23px }
+		&:nth-child(10) { left : 10px; top : 13px }
+		&:nth-child(11) { left : 16px; top : 7px }
+		&:nth-child(12) { left : 23px; top : 5px }
+	}
+}

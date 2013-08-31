@@ -1,0 +1,30 @@
+.iphone-header {
+	position      : absolute;
+	width         : 100%;
+	background    : -webkit-linear-gradient(top, rgba(112, 112, 112, 0.3) 0%, rgba(56, 56, 56, 0.3) 50%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.3) 100%);
+	background    : linear-gradient(to bottom, rgba(112, 112, 112, 0.3) 0%, rgba(56, 56, 56, 0.3) 50%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.3) 100%);
+	left          : 0;
+	top           : 20px;
+	top           : -113px;
+	height        : 93px;
+	border-bottom : 1px rgba(255, 255, 255, 0.2) solid;
+	box-shadow    : rgba(0, 0, 0, 0.4) 0 1px 0;
+	text-align    : center;
+	color         : #fff;
+	text-shadow   : rgba(0, 0, 0, 0.3) 0 -1px 0;
+	z-index       : 2;
+	.iphone-header-time {
+		font  : 200 65px/69px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+		width : 100%;
+		span {
+			position : relative;
+			top      : -4px;
+		}
+	}
+	.iphone-header-date {
+		font     : 200 17px/17px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+		width    : 100%;
+		position : relative;
+		top      : -3px;
+	}
+}

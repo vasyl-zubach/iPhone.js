@@ -1,0 +1,195 @@
+.i_videos {
+	background : -webkit-linear-gradient(top, #2e2e2e 0%, #000 9px, #454545 10px, #262626 11px, #040507 20px, #2c4a5b 21px, #226c98 22px, #8fd7e0 100%);
+	background : -moz-linear-gradient(top, #2e2e2e 0%, #000 9px, #454545 10px, #262626 11px, #040507 20px, #2c4a5b 21px, #226c98 22px, #8fd7e0 100%);
+	background : -ms-linear-gradient(top, #2e2e2e 0%, #000 9px, #454545 10px, #262626 11px, #040507 20px, #2c4a5b 21px, #226c98 22px, #8fd7e0 100%);
+	background : -o-linear-gradient(top, #2e2e2e 0%, #000 9px, #454545 10px, #262626 11px, #040507 20px, #2c4a5b 21px, #226c98 22px, #8fd7e0 100%);
+	background : linear-gradient(top, #2e2e2e 0%, #000 9px, #454545 10px, #262626 11px, #040507 20px, #2c4a5b 21px, #226c98 22px, #8fd7e0 100%);
+}
+
+.i_videos .top {
+	position      : absolute;
+	height        : 21px;
+	border-radius : 10px 10px 0 0;
+}
+
+.i_videos .top:after {
+	content       : '';
+	position      : absolute;
+	width         : 10px;
+	height        : 100%;
+	top           : 0;
+	left          : 0;
+	background    : -webkit-linear-gradient(top, #514f4f, #3e3c3c);
+	background    : -moz-linear-gradient(top, #514f4f, #3e3c3c);
+	background    : -ms-linear-gradient(top, #514f4f, #3e3c3c);
+	background    : -o-linear-gradient(top, #514f4f, #3e3c3c);
+	background    : linear-gradient(top, #514f4f, #3e3c3c);
+	border-radius : 10px 0 0 0;
+	box-shadow    : inset rgba(0, 0, 0, 0.5) 0 -1px 0, inset rgba(255, 255, 255, 0.8) 0 0 1px;
+}
+
+.i_videos .top:before {
+	content       : '';
+	position      : absolute;
+	width         : 3px;
+	height        : 3px;
+	top           : 42%;
+	left          : 4px;
+	border-radius : 3px;
+	z-index       : 2;
+	background    : #fff;
+	box-shadow    : inset rgba(0, 0, 0, 0.2) 0 -1px 1px, #000 0 0 1px;
+}
+
+.i_videos .top .hr1, .i_videos .top .hr2 {
+	position          : absolute;
+	top               : 0;
+	left              : 15px;
+	background        : -webkit-linear-gradient(top, #e3e2e2, #aeaeae);
+	background        : -moz-linear-gradient(top, #e3e2e2, #aeaeae);
+	background        : -ms-linear-gradient(top, #e3e2e2, #aeaeae);
+	background        : -o-linear-gradient(top, #e3e2e2, #aeaeae);
+	background        : linear-gradient(top, #e3e2e2, #aeaeae);
+	height            : 10px;
+	width             : 11px;
+	-webkit-transform : skew(45deg);
+	-moz-transform    : skew(45deg);
+	-ms-transform     : skew(45deg);
+	-o-transform      : skew(45deg);
+	transform         : skew(45deg);
+	box-shadow        : inset rgba(0, 0, 0, 0.5) 0 -1px 1px;
+	border            : none;
+	margin            : 0;
+	padding           : 0;
+	z-index           : 6;
+}
+
+.i_videos .top .hr2 {
+	left : 36px
+}
+
+.i_videos .top .hr3, .i_videos .top .hr4, .i_videos .top .hr5 {
+	position          : absolute;
+	top               : 10px;
+	left              : 15px;
+	background        : -webkit-linear-gradient(top, #e3e2e2, #aeaeae);
+	background        : -moz-linear-gradient(top, #e3e2e2, #aeaeae);
+	background        : -ms-linear-gradient(top, #e3e2e2, #aeaeae);
+	background        : -o-linear-gradient(top, #e3e2e2, #aeaeae);
+	background        : linear-gradient(top, #e3e2e2, #aeaeae);
+	height            : 10px;
+	width             : 11px;
+	-webkit-transform : skew(-45deg);
+	-moz-transform    : skew(-45deg);
+	-ms-transform     : skew(-45deg);
+	-o-transform      : skew(-45deg);
+	transform         : skew(-45deg);
+	box-shadow        : inset rgba(0, 0, 0, 0.5) 0 1px 1px, inset rgba(0, 0, 0, 0.5) 0 -1px 1px;
+	border            : none;
+	margin            : 0;
+	padding           : 0;
+}
+
+.i_videos .top .hr4 { left : 36px }
+
+.i_videos .top .hr5 { left : 57px }
+
+.i_videos .top .hack {
+	position          : absolute;
+	top               : 3px;
+	left              : 6px;
+	background        : -webkit-linear-gradient(top, #232323, #000);
+	background        : -moz-linear-gradient(top, #232323, #000);
+	background        : -ms-linear-gradient(top, #232323, #000);
+	background        : -o-linear-gradient(top, #232323, #000);
+	background        : linear-gradient(top, #232323, #000);
+	height            : 7px;
+	width             : 10px;
+	-webkit-transform : skew(45deg);
+	-moz-transform    : skew(45deg);
+	-ms-transform     : skew(45deg);
+	-o-transform      : skew(45deg);
+	transform         : skew(45deg);
+	border            : none;
+	margin            : 0;
+	padding           : 0;
+	z-index           : 5;
+	box-shadow        : inset rgba(255, 255, 255, 0.5) 1px 0 0px;
+}
+
+.i_videos .top .hack::after {
+	content           : '';
+	position          : absolute;
+	top               : -3px;
+	left              : 2px;
+	background        : -webkit-linear-gradient(top, #2e2e2e, #232323);
+	background        : -moz-linear-gradient(top, #2e2e2e, #232323);
+	background        : -ms-linear-gradient(top, #2e2e2e, #232323);
+	background        : -o-linear-gradient(top, #2e2e2e, #232323);
+	background        : linear-gradient(top, #2e2e2e, #232323);
+	height            : 3px;
+	width             : 8px;
+	-webkit-transform : skew(-45deg);
+	-moz-transform    : skew(-45deg);
+	-ms-transform     : skew(-45deg);
+	-o-transform      : skew(-45deg);
+	transform         : skew(-45deg);
+	border            : none;
+	margin            : 0;
+	padding           : 0;
+	z-index           : 5;
+	border-radius     : 7px 0 0 0/ 3px 0 0 0;
+}
+
+.i_videos .bottom {
+	position      : absolute;
+	top           : 20px;
+	left          : 0;
+	width         : 100%;
+	height        : 35px;
+	border-radius : 0 0 10px 10px;
+	overflow      : hidden;
+	background    : -webkit-linear-gradient(-57deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.075) 50%, rgba(0, 0, 0, 0.015) 51%, rgba(255, 255, 255, 0) 65%, rgba(255, 255, 255, 0) 100%);
+	background    : -moz-linear-gradient(-57deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.075) 50%, rgba(0, 0, 0, 0.015) 51%, rgba(255, 255, 255, 0) 65%, rgba(255, 255, 255, 0) 100%);
+	background    : -ms-linear-gradient(-57deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.075) 50%, rgba(0, 0, 0, 0.015) 51%, rgba(255, 255, 255, 0) 65%, rgba(255, 255, 255, 0) 100%);
+	background    : -o-linear-gradient(-57deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.075) 50%, rgba(0, 0, 0, 0.015) 51%, rgba(255, 255, 255, 0) 65%, rgba(255, 255, 255, 0) 100%);
+	background    : linear-gradient(-57deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.075) 50%, rgba(0, 0, 0, 0.015) 51%, rgba(255, 255, 255, 0) 65%, rgba(255, 255, 255, 0) 100%);
+}
+
+.i_videos .bottom b {
+	position   : absolute;
+	box-shadow : inset rgba(255, 255, 255, 0.1) 0 0 7px 2px, rgba(0, 0, 0, 0.03) 0 0 3px;
+}
+
+.i_videos .bottom .c1 {
+	left          : 45px;
+	top           : -10px;
+	width         : 20px;
+	height        : 20px;
+	border-radius : 20px;
+}
+
+.i_videos .bottom .c2 {
+	border-radius : 20px;
+	width         : 35px;
+	height        : 35px;
+	left          : 23px;
+	top           : -15px;
+	opacity       : 0.5;
+}
+
+.i_videos .bottom .c3 {
+	border-radius : 40px;
+	width         : 35px;
+	height        : 35px;
+	left          : -17px;
+	top           : 10px;
+}
+
+.i_videos .bottom .c4 {
+	border-radius : 50px;
+	width         : 45px;
+	height        : 45px;
+	left          : -20px;
+	top           : -2px;
+}

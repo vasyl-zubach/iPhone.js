@@ -1,0 +1,46 @@
+/*!
+ * iPhone4 on CSS3
+ * tjrus.com/iphone
+ *
+ * Copyright (c) 2011 Vasil Zubach
+ * Author: Vasil Zubach
+ */
+
+@import 'device';
+@import 'headline';
+@import 'header';
+@import 'icon';
+@import 'dock';
+@import 'footer';
+@import 'alert';
+@import 'iphone-statuses';
+
+/* ---------------------------------------------------------------------------- */
+.i_message, .i_contacts, .i_calendar, .i_clock, .i_notes, .i_reminders, .i_mail, .i_app_store, .i_videos, .i_youtube, .i_maps, .i_calculator, .i_itunes, .i_stocks, .i_voice_memos, .i_weather, .i_phone, .i_safari, .i_camera, .i_music {
+	width         : 100%;
+	height        : 100%;
+	border-radius : 10px;
+	position      : relative;
+	overflow      : hidden;
+	cursor        : default;
+}
+
+/* ---------------------------------------------------------------------------- */
+@import 'icons/message';
+@import 'icons/calendar';
+@import 'icons/contacts';
+@import 'icons/clock';
+@import 'icons/notes';
+@import 'icons/reminders';
+@import 'icons/mail';
+@import 'icons/app_store';
+@import 'icons/videos';
+@import 'icons/youtube';
+@import 'icons/calculator';
+@import 'icons/itunes';
+@import 'icons/stocks';
+@import 'icons/voice_memos';
+@import 'icons/weather';
+@import 'icons/phone';
+@import 'icons/camera';
+@import 'icons/music';

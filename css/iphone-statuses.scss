@@ -1,0 +1,117 @@
+$time : .2s;
+@mixin transition($what, $duration) {
+	-webkit-transition : $what $duration !important;
+	-moz-transition    : $what $duration !important;
+	transition         : $what $duration !important;
+}
+
+@mixin no-transition {
+	-webkit-transition : none;
+	-moz-transition    : none;
+	transition         : none;
+}
+
+.iphone-off {
+	.iphone-icons-container .iphone-icon {
+		display : none;
+	}
+	.iphone-display {
+		background : #000;
+	}
+	.iphone-icon {
+		@include no-transition;
+		display : none;
+	}
+	.iphone-headline {
+		@include no-transition;
+		top : -20px;
+	}
+	.iphone-dock {
+		@include no-transition;
+		bottom : -80px;
+	}
+}
+
+.iphone-lock {
+	.iphone-icons-container .iphone-icon {
+		&:nth-child(1) { top : -200px; left : -183px; }
+		&:nth-child(2) { top : -200px; left : -108px; }
+		&:nth-child(3) { top : -200px; left : 368px; }
+		&:nth-child(4) { top : -200px; left : 443px; }
+		&:nth-child(5) { top : -114px; left : -183px; }
+		&:nth-child(6) { top : -114px; left : -108px; }
+		&:nth-child(7) { top : -114px; left : 368px; }
+		&:nth-child(8) { top : -114px; left : 443px; }
+		&:nth-child(9) { top : 372px; left : -183px; }
+		&:nth-child(10) { top : 372px; left : -108px; }
+		&:nth-child(11) { top : 372px; left : 368px; }
+		&:nth-child(12) { top : 372px; left : 443px; }
+		&:nth-child(13) { top : 458px; left : -183px; }
+		&:nth-child(14) { top : 458px; left : -108px; }
+		&:nth-child(15) { top : 458px; left : 368px; }
+		&:nth-child(16) { top : 458px; left : 443px; }
+	}
+	.iphone-header {
+		@include no-transition;
+		top : 20px;
+	}
+	.iphone-footer {
+		@include no-transition;
+		bottom : 0;
+	}
+	.iphone-headline {
+		@include no-transition;
+		top : 0;
+	}
+}
+
+.iphone-on {
+	.iphone-header {
+		@include transition(top, $time);
+		top : -113px;
+	}
+	.iphone-icons-container .iphone-icon {
+		@include transition(all, $time);
+		&:nth-child(1) { top : 0; left : 17px; }
+		&:nth-child(2) { top : 0; left : 92px; }
+		&:nth-child(3) { top : 0; left : 168px; }
+		&:nth-child(4) { top : 0; left : 243px; }
+		&:nth-child(5) { top : 86px; left : 17px; }
+		&:nth-child(6) { top : 86px; left : 92px; }
+		&:nth-child(7) { top : 86px; left : 168px; }
+		&:nth-child(8) { top : 86px; left : 243px; }
+		&:nth-child(9) { top : 172px; left : 17px; }
+		&:nth-child(10) { top : 172px; left : 92px; }
+		&:nth-child(11) { top : 172px; left : 168px; }
+		&:nth-child(12) { top : 172px; left : 243px; }
+		&:nth-child(13) { top : 258px; left : 17px; }
+		&:nth-child(14) { top : 258px; left : 92px; }
+		&:nth-child(15) { top : 258px; left : 168px; }
+		&:nth-child(16) { top : 258px; left : 243px; }
+	}
+
+	.iphone-dock .iphone-icon {
+		&:nth-child(1) { margin-left : 7px; margin-right : 19px; }
+		&:nth-child(2) { margin-right : 20px; }
+		&:nth-child(3) { margin-right : 19px; }
+	}
+
+	.iphone-headline {
+		@include transition(top, $time);
+		top : 0;
+	}
+	.iphone-headline-lock {
+		display : none;
+	}
+	.iphone-headline-time {
+		display : block;
+	}
+	.iphone-dock {
+		@include transition(bottom, $time);
+		bottom : 0;
+	}
+	.iphone-footer {
+		@include transition(bottom, $time);
+		bottom : -97px;
+	}
+}

@@ -1,0 +1,53 @@
+.iphone-icons-container {
+	top      : 34px;
+	width    : 320px;
+	position : relative;
+	display  : block;
+	position : absolute;
+	left     : 0;
+}
+
+.iphone-icon {
+	width         : 56px;
+	height        : 56px;
+	border-radius : 10px;
+	box-shadow    : 0 1px 2px rgba(0, 0, 0, .5);
+	margin-bottom : 30px;
+	z-index       : 10;
+	float         : left;
+	position      : absolute;
+
+	.icon-title {
+		display        : block;
+		text-align     : center;
+		font           : bold 11px/15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+		color          : #fff;
+		text-shadow    : 1px 2px 1px rgba(0, 0, 0, .3);
+		text-transform : capitalize;
+		position       : absolute;
+		top            : 58px;
+		left           : -10px;
+		width          : 76px;
+	}
+}
+
+.iphone .iphone-icons-container .iphone-icon {
+	//display : none;
+	//@include no-transition;
+	&:nth-child(1) { top : -200px; left : -183px; }
+	&:nth-child(2) { top : -200px; left : -108px; }
+	&:nth-child(3) { top : -200px; left : -32px; }
+	&:nth-child(4) { top : -200px; left : 43px; }
+	&:nth-child(5) { top : -114px; left : -183px; }
+	&:nth-child(6) { top : -114px; left : -108px; }
+	&:nth-child(7) { top : -114px; left : -32px; }
+	&:nth-child(8) { top : -114px; left : 43px; }
+	&:nth-child(9) { top : -28px; left : -183px; }
+	&:nth-child(10) { top : -28px; left : -108px; }
+	&:nth-child(11) { top : -28px; left : -32px; }
+	&:nth-child(12) { top : -28px; left : 43px; }
+	&:nth-child(13) { top : 58px; left : -183px; }
+	&:nth-child(14) { top : 58px; left : -108px; }
+	&:nth-child(15) { top : 58px; left : -32px; }
+	&:nth-child(16) { top : 58px; left : 43px; }
+}

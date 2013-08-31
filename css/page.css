@@ -1,0 +1,106 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-color: #f6f6f6;
+	background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+	background-position: 20px 0px;
+	font: 14px/20px 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;
+	color: #464646;
+}
+
+a {
+	color: #3530e0;
+}
+
+p:last-child {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.main-container {
+	height: 100%;
+	width: 820px;
+	padding: 0 20px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.iphone-container {
+	float: left;
+	width: 380px;
+	padding: 20px 20px 20px 0;
+}
+.iphone-description {
+	width: 400px;
+	float: right;
+	padding: 20px 0 20px 20px;
+}
+.block-description {
+	padding: 10px 20px;
+	margin-bottom: 10px;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+.block-description h3 {
+	padding: 5px;
+	margin: 0 -5px 10px;
+	border-bottom: 1px rgba(0,0,0,.1) solid;
+}
+.block-description.made_by h3 {
+	border-bottom: none;
+	margin-bottom: 0;
+}
+.btn-follow {
+	float: right;
+	margin-top: -24px;
+}
+
+.facebook_like { overflow: visible; height: 20px; width: 110px; float: left; }
+.twitter { overflow: visible; height: 20px; width: 130px; float: left; }
+.google_plus { overflow: visible; height: 20px; width: 110px; float: left; }
+
+
+.color-set { list-style: none; margin: 0; padding: 0; width: 100%;}
+.color-set li { list-style: none; margin: 0; padding: 0; float: left; overflow: visible; position: relative; width: 25px; height: 20px; }
+.color-set li.first a {
+	border-radius: 3px 0 0 3px;
+}
+.color-set li.last a {
+	border-radius: 0 3px 3px 0;
+}
+.color-set li a { width:100%; height:100%; display: block; position: relative; z-index: 0;
+	/*box-shadow: inset rgba(0,0,0,0.5) 0 0 1px;*/
+	box-shadow: 0 1px 1px rgba(0,0,0,.2);
+}
+
+.color-set li a::after { content: ''; height: 50%; top:0; left: 0; position: absolute; width: 100%; cursor: pointer;}
+.color-set a:hover { height: 26px; margin-top: -3px; width: 27px; margin-left: -1px; z-index: 10;}
+.color-set a.on,
+.color-set a:hover.on { height: 24px; margin-top: -2px; width:25px; margin-left: 0;}
+
+.color-set-random {
+	float: right !important;
+	cursor: pointer;
+	background: #f1f1f1;
+	width: auto !important;
+	padding: 0 5px !important;
+	box-shadow: 0 1px 1px rgba(0,0,0,.2);
+	border-radius: 3px;
+	font-size: 12px;
+}
+
+.list {list-style: square; margin:0; padding: 0 0 0 20px;}
+
+.block-discuss {
+	margin: 0 20px 20px;
+}
+
+.clear {
+	clear: both;
+	height: 0 !important;
+	overflow: hidden;
+}

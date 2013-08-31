@@ -1,0 +1,128 @@
+.i_contacts {
+	background: -webkit-linear-gradient(top, #e0b77a, #d6983f);
+	background:         linear-gradient(to bottom, #e0b77a, #d6983f);
+	}
+
+.i_contacts:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 10px;
+	height: 100%;
+	background: -webkit-linear-gradient(left, #36251c, #8b5c40);
+	background:         linear-gradient(to right, #36251c, #8b5c40);
+box-shadow: #a37530 -1px 0 1px, inset rgba(255,255,255,0.1) -1px 0 0;
+border-radius: 0 10px 10px 0;
+	}
+
+.i_contacts .right_side {
+	position: absolute;
+	width: 8px;
+	padding: 0 0 0 2px;
+	height: 100%;
+	top: 0;
+	right: 0;
+	font: bold 4px/9px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif !important;
+	text-transform: uppercase;
+	color: #d59460;
+	z-index: 3;
+	text-shadow: rgba(0,0,0,1) 0 0 1px,  rgba(0,0,0,1) 0 0 1px;
+	-webkit-background-size: 100% 17%;
+	-moz-background-size: 100% 17%;
+	-ms-background-size: 100% 17%;
+	-o-background-size: 100% 17%;
+	background-size: 100% 17%;
+	background-image: -webkit-linear-gradient(top, transparent 0%, transparent 90%,  #32251d 100%);
+	background-image:         linear-gradient(to bottom, transparent 0%, transparent 90%,  #32251d 100%);
+	border-radius: 0 10px 10px 0;
+	opacity: 0.6;
+}
+
+.i_contacts .left_side {
+	position: absolute;
+	width: 8px;
+	height: 100%;
+	top: 8px;
+	left: 0;
+	z-index: 3;
+	border-radius: 10px 0 0 10px;
+}
+
+.i_contacts .left_side hr {
+	position: relative;
+	display: block;
+	margin: 0 0 3px 0;
+	padding: 0;
+	height: 1px;
+	width: 9px;
+	border: none;
+	background: -webkit-linear-gradient(left, #626265 0%, #fff 50%, #626265 100%);
+	background:         linear-gradient(to right, #626265 0%, #fff 50%, #626265 100%);
+	z-index: 7;
+	border-radius: 2px;
+}
+
+.i_contacts .left_side hr:before {
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 2px;
+	border-radius: 3px;
+	background: #000;
+	z-index: 0;
+	top: -50%;
+	right: -10%;
+	box-shadow: rgba(255,255,255,0.2) 0 0 1px 1px;
+}
+
+.i_contacts .left_side hr:after {
+	content: '';
+	position: absolute;
+	display: block;
+	height: 1px;
+	width: 9px;
+	border: none;
+	background: -webkit-linear-gradient(left, #626265 0%, #fff 50%, #626265 100%);
+	background:         linear-gradient(to right, #626265 0%, #fff 50%, #626265 100%);
+	z-index: 7;
+	border-radius: 2px;
+}
+
+.i_contacts .profile {
+	position: absolute;
+	width: 17px;
+	height: 5px;
+	top: 31px;
+	left: 18px;
+	border-radius: 50% 50% 0 0 / 3px 3px 0 0;
+	background: #814b2b;
+	box-shadow: inset #270000 0 1px 1px;
+}
+
+.i_contacts .profile .head {
+	position: absolute;
+	width: 7px;
+	height: 8px;
+	top: -10px;
+	left: 33%;
+	border-radius: 50% / 3px 3px 4px 4px;
+	background: #814b2b;
+	box-shadow: inset #270000 0 1px 2px;
+	-webkit-transform: scaleY(1.2);
+	-moz-transform: scaleY(1.2);
+	-ms-transform: scaleY(1.2);
+	-o-transform: scaleY(1.2);
+	transform: scaleY(1.2);
+}
+
+.i_contacts .profile .neck{
+	position: absolute;
+	width: 1px;
+	height: 0;
+	top: -4px;
+	left: 39%;
+	border-bottom: 6px solid #814b2b;
+	border-left: 2px solid transparent;
+	border-right: 2px solid transparent;
+}

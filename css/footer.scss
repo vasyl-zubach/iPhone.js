@@ -1,0 +1,129 @@
+.iphone-footer {
+	position   : absolute;
+	width      : 100%;
+	background : -webkit-linear-gradient(top, rgba(112, 112, 112, 0.3) 0%, rgba(56, 56, 56, 0.3) 50%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.3) 100%);
+	background : linear-gradient(to bottom, rgba(112, 112, 112, 0.3) 0%, rgba(56, 56, 56, 0.3) 50%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.3) 100%);
+	left       : 0;
+	bottom     : 0;
+	bottom     : -97px;
+	height     : 95px;
+	border-top : 1px rgba(255, 255, 255, 0.4) solid;
+	box-shadow : 0 -1px 0 rgba(0, 0, 0, .4);
+	z-index    : 2;
+}
+
+.iphone-unlock {
+	width         : 275px;
+	height        : 51px;
+	position      : absolute;
+	left          : 50%;
+	margin-left   : -139px;
+	top           : 20px;
+	padding       : 0 0 0 2px;
+	border-radius : 13px;
+	background    : -webkit-linear-gradient(top, #020509, #232527);
+	background    : linear-gradient(to bottom, #020509, #232527);
+	border        : 1px solid #333;
+}
+
+.iphone-slider {
+	position      : absolute;
+	width         : 69px;
+	height        : 45px;
+	left          : 0;
+	top           : 3px;
+	background    : -webkit-linear-gradient(top, #fdfdfd 0%, #dddddd 50%, #d1d1d1 50%, #a1a1a1 100%);
+	background    : linear-gradient(to bottom, #fdfdfd 0%, #dddddd 50%, #d1d1d1 50%, #a1a1a1 100%);
+	border-radius : 10px;
+	box-shadow    : rgba(0, 0, 0, 0.9) 0 1px 1px;
+	z-index       : 10;
+	margin        : 0 3px;
+	cursor        : pointer;
+	&:after {
+		content    : '';
+		background : #8c8c8c;
+		width      : 18px;
+		height     : 12px;
+		left       : 21px;
+		top        : 17px;
+		position   : absolute;
+		box-shadow : rgba(255, 255, 255, 0.3) 0 1px 0;
+	}
+	&:before {
+		content           : '';
+		position          : absolute;
+		width             : 0;
+		height            : 0;
+		left              : 34px;
+		top               : 11px;
+		border-top        : 12px solid transparent;
+		border-left       : 24px solid #8c8c8c;
+		border-bottom     : 12px solid transparent;
+		-webkit-transform : scaleX(0.6);
+		-moz-transform    : scaleX(0.6);
+		-ms-transform     : scaleX(0.6);
+		-o-transform      : scaleX(0.6);
+		transform         : scaleX(0.6);
+		z-index           : 1;
+	}
+}
+
+.iphone-slide2unlock {
+	position          : absolute;
+	left              : 93px;
+	font              : 200 26px/51px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	-webkit-transform : scaleX(0.99);
+	-moz-transform    : scaleX(0.99);
+	-ms-transform     : scaleX(0.99);
+	-o-transform      : scaleX(0.99);
+	transform         : scaleX(0.99);
+	top               : 0;
+	color             : #fff;
+	z-index           : 4;
+	span {
+		opacity: .2;
+	}
+	&.iphone-slide2unlock-animation__on span {
+		opacity : .2;
+		-webkit-animation : slide_letters 1.8s linear 1s infinite;
+		-moz-animation    : slide_letters 1.8s linear 1s infinite;
+		-ms-animation     : slide_letters 1.8s linear 1s infinite;
+		-o-animation      : slide_letters 1.8s linear 1s infinite;
+		animation         : slide_letters 1.8s linear 1s infinite;
+		@for $i from 1 through 13 {
+			&:nth-child(#{$i}) {
+				-webkit-animation-delay : .07s * $i;
+				-moz-animation-delay    : .07s * $i;
+				-ms-animation-delay     : .07s * $i;
+				-o-animation-delay      : .07s * $i;
+				animation-delay         : .07s * $i;
+			}
+		}
+	}
+}
+
+@-webkit-keyframes slide_letters {
+	0%, 30% { opacity : .2; }
+	15% { opacity : 1; }
+}
+
+@-moz-keyframes slide_letters {
+	0%, 30% { opacity : .2; }
+	15% { opacity : 1; }
+}
+
+@-ms-keyframes slide_letters {
+	0%, 30% { opacity : .2; }
+	15% { opacity : 1; }
+}
+
+@-o-keyframes slide_letters {
+	0%, 30% { opacity : .2; }
+	15% { opacity : 1; }
+}
+
+@keyframes slide_letters {
+	0%, 30% { opacity : .2; }
+	15% { opacity : 1; }
+}
+

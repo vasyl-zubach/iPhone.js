@@ -1,0 +1,150 @@
+.i_calculator {
+	background : -webkit-linear-gradient(top, #c6bcb5, #39302a);
+	background : -moz-linear-gradient(top, #c6bcb5, #39302a);
+	background : -ms-linear-gradient(top, #c6bcb5, #39302a);
+	background : -o-linear-gradient(top, #c6bcb5, #39302a);
+	background : linear-gradient(top, #c6bcb5, #39302a);
+}
+
+.i_calculator .plus {
+	position   : absolute;
+	width      : 28px;
+	height     : 28px;
+	left       : 0;
+	top        : 0;
+	box-shadow : inset rgba(0,0,0,0.3) -1px 0 0, inset rgba(0, 0, 0, 0.3) 0 -1px 0, inset rgba(255,255,255,0.1) -1px -1px 0 1px;
+}
+
+.i_calculator .plus b {
+	display    : block;
+	width      : 12px;
+	height     : 2px;
+	background : #fff;
+	position   : absolute;
+	left       : 8px;
+	top        : 14px;
+	box-shadow : rgba(0, 0, 0, 0.5) 0 -1px 0, rgba(0, 0, 0, 0.2) 0 0 0 1px, inset rgba(0, 0, 0, 0.2) 0 1px 0, rgba(255, 255, 255, 0.8) 0 1px 0;
+}
+
+.i_calculator .plus b:before {
+	content    : '';
+	position   : absolute;
+	height     : 12px;
+	width      : 2px;
+	background : #fff;
+	left       : 5px;
+	top        : -5px;
+	box-shadow : rgba(0, 0, 0, 0.5) 0 -1px 0, rgba(0, 0, 0, 0.2) 0 0 0 1px, inset rgba(0, 0, 0, 0.2) 0 1px 0, rgba(255, 255, 255, 0.8) 0 1px 0;
+	z-index    : 1;
+}
+
+.i_calculator .plus b:after {
+	content    : '';
+	position   : absolute;
+	width      : 12px;
+	height     : 2px;
+	left       : 0;
+	top        : 0;
+	background : #fff;
+	z-index    : 3;
+}
+
+.i_calculator .minus {
+	position   : absolute;
+	width      : 29px;
+	height     : 28px;
+	right      : 0;
+	top        : 0;
+	box-shadow : inset rgba(0, 0, 0, 0.3) 1px 0 0, inset rgba(0, 0, 0, 0.3) 0 -1px 0, inset rgba(255, 255, 255, 0.1) 1px -1px 0 1px;
+}
+
+.i_calculator .minus b {
+	display    : block;
+	width      : 13px;
+	height     : 2px;
+	background : #fff;
+	position   : absolute;
+	left       : 8px;
+	top        : 14px;
+	box-shadow : rgba(0, 0, 0, 0.5) 0 -1px 0, rgba(0, 0, 0, 0.2) 0 0 0 1px, inset rgba(0, 0, 0, 0.2) 0 1px 0, rgba(255, 255, 255, 0.8) 0 1px 0;
+}
+
+.i_calculator .multiply {
+	position   : absolute;
+	width      : 28px;
+	height     : 29px;
+	left       : 0;
+	top        : 27px;
+	box-shadow : inset rgba(0,0,0,0.3) -1px 0 0, inset rgba(0, 0, 0, 0.3) 0 1px 0, inset rgba(255,255,255,0.1) -1px 1px 0 1px;
+}
+
+.i_calculator .multiply b {
+	display           : block;
+	width             : 12px;
+	height            : 2px;
+	background        : #fff;
+	position          : absolute;
+	left              : 8px;
+	top               : 14px;
+	box-shadow        : rgba(0, 0, 0, 0.5) 0 -1px 0, rgba(0, 0, 0, 0.2) 0 0 0 1px, inset rgba(0, 0, 0, 0.2) 0 1px 0, rgba(255, 255, 255, 0.8) 0 1px 0;
+	-webkit-transform : rotate(45deg);
+	-moz-transform    : rotate(45deg);
+	-ms-transform     : rotate(45deg);
+	-o-transform      : rotate(45deg);
+	transform         : rotate(45deg);
+}
+
+.i_calculator .multiply b:before {
+	content    : '';
+	position   : absolute;
+	height     : 12px;
+	width      : 2px;
+	background : #fff;
+	left       : 5px;
+	top        : -5px;
+	box-shadow : rgba(0, 0, 0, 0.5) 0 -1px 0, rgba(0, 0, 0, 0.2) 0 0 0 1px, inset rgba(0, 0, 0, 0.2) 0 1px 0, rgba(255, 255, 255, 0.8) 0 1px 0;
+	z-index    : 1;
+}
+
+.i_calculator .multiply b:after {
+	content    : '';
+	position   : absolute;
+	width      : 12px;
+	height     : 2px;
+	left       : 0;
+	top        : 0;
+	background : #fff;
+	z-index    : 3;
+}
+
+.i_calculator .result {
+	position      : absolute;
+	width         : 28px;
+	height        : 28px;
+	right         : 0;
+	top           : 28px;
+	box-shadow    : inset rgba(255, 255, 255, 0.1) 1px 1px 0;
+	background    : -webkit-linear-gradient(top, #ed8628, #9b420e);
+	background    : -moz-linear-gradient(top, #ed8628, #9b420e);
+	background    : -ms-linear-gradient(top, #ed8628, #9b420e);
+	background    : -o-linear-gradient(top, #ed8628, #9b420e);
+	background    : linear-gradient(top, #ed8628, #9b420e);
+	border-radius : 0 0 10px 0;
+}
+
+.i_calculator .result b, .i_calculator .result b:before {
+	display    : block;
+	width      : 13px;
+	height     : 2px;
+	background : #fff;
+	position   : absolute;
+	left       : 8px;
+	top        : 10px;
+	box-shadow : #b03508 0 -1px 0, rgba(0, 0, 0, 0.2) 0 0 0 1px, inset rgba(0, 0, 0, 0.2) 0 1px 0, rgba(255, 255, 255, 0.8) 0 1px 0;
+}
+
+.i_calculator .result b:before {
+	content : '';
+	left    : 0;
+	top     : 6px;
+}

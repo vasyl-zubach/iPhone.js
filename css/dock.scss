@@ -1,0 +1,46 @@
+.iphone-dock {
+	border-bottom : 42px solid rgba(255, 255, 255, 0.15);
+	border-left   : 10px solid transparent;
+	border-right  : 10px solid transparent;
+	height        : 0;
+	width         : 300px;
+	position      : absolute;
+	left          : 0;
+	bottom        : 4px;
+	bottom        : -80px;
+	//display       : none;
+	z-index       : 5;
+	&:after {
+		content    : '';
+		position   : absolute;
+		top        : 42px;
+		left       : -10px;
+		display    : block;
+		width      : 320px;
+		height     : 4px;
+		background : -webkit-linear-gradient(left, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.30) 40%, rgba(255, 255, 255, 0.20) 80%, rgba(255, 255, 255, 0.15) 100%);
+		background : linear-gradient(to right, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.30) 40%, rgba(255, 255, 255, 0.20) 80%, rgba(255, 255, 255, 0.15) 100%);
+		box-shadow : inset 0 1px 0 rgba(255, 255, 255, 0.09);
+	}
+	&:before {
+		content       : '';
+		position      : absolute;
+		top           : 0px;
+		left          : -100px;
+		display       : block;
+		width         : 320px;
+		border-radius : 0 0 300px/40px 0;
+		height        : 30px;
+		background    : -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.20) 80%, rgba(255, 255, 255, 0.15) 100%);
+		background    : linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.20) 80%, rgba(255, 255, 255, 0.15) 100%);
+		z-index       : -1;
+	}
+}
+
+.iphone-dock .iphone-icon {
+	position   : relative;
+	margin-top : -30px;
+	z-index    : 10;
+	top        : 0;
+	left       : 0;
+}

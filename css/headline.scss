@@ -1,0 +1,151 @@
+.iphone-headline {
+	position      : absolute;
+	top           : 0;
+	left          : 0;
+	background    : rgba(0, 0, 0, 0.6);
+	width         : 100%;
+	height        : 19px;
+	border-bottom : 1px rgba(0, 0, 0, 0.3) solid;
+	overflow      : hidden;
+	z-index       : 3;
+}
+
+.iphone-net {
+	position : absolute;
+	top      : 4px;
+	left     : 4px;
+	width    : 19px;
+	height   : 10px;
+	overflow : hidden;
+	&:after {
+		content    : '';
+		position   : absolute;
+		right      : 0;
+		top        : 0;
+		display    : block;
+		width      : 3px;
+		height     : 10px;
+		background : #c6c6c6;
+		box-shadow : #c6c6c6 -4px 2px 0, #c6c6c6 -8px 4px 0, #c6c6c6 -12px 6px 0, #c6c6c6 -16px 8px 0;
+	}
+}
+
+.iphone-net-title {
+	font           : bold 13px/19px "Helvetica Neue";
+	color          : #c6c6c6;
+	text-shadow    : rgba(0, 0, 0, 0.3) 0 1px 1px;
+	text-transform : uppercase;
+	position       : absolute;
+	left           : 26px;
+	top            : 0;
+}
+
+.iphone-wi-fi {
+	top               : -14px;
+	left              : 70px;
+	width             : 25px;
+	height            : 25px;
+	-webkit-transform : rotate(45deg);
+	-moz-transform    : rotate(45deg);
+	-ms-transform     : rotate(45deg);
+	-o-transform      : rotate(45deg);
+	transform         : rotate(45deg);
+	overflow          : hidden;
+	position          : absolute;
+	border-radius     : 1px;
+	&:after {
+		content       : '';
+		top           : 12px;
+		left          : 12px;
+		width         : 20px;
+		height        : 20px;
+		overflow      : hidden;
+		position      : absolute;
+		border-radius : 20px;
+		border        : 2px #c6c6c6 solid;
+	}
+	&:before {
+		content       : '';
+		top           : 17px;
+		left          : 17px;
+		width         : 10px;
+		height        : 10px;
+		overflow      : hidden;
+		position      : absolute;
+		border-radius : 20px;
+		border        : 2px #c6c6c6 solid;
+	}
+	.hack {
+		position      : absolute;
+		left          : 22px;
+		top           : 22px;
+		width         : 4px;
+		height        : 4px;
+		border-radius : 3px;
+		background    : #c6c6c6;
+		z-index       : 6;
+	}
+}
+
+.iphone-headline-time {
+	font           : bold 13px/19px "Helvetica Neue";
+	color          : #c6c6c6;
+	text-shadow    : rgba(0, 0, 0, 0.3) 0 1px 1px;
+	text-transform : uppercase;
+	position       : absolute;
+	left           : 0;
+	top            : 0;
+	display        : none;
+	width          : 100%;
+	text-align     : center;
+}
+
+.iphone-headline-lock {
+	width      : 10px;
+	height     : 7px;
+	position   : absolute;
+	background : #c6c6c6;
+	top        : 8px;
+	left       : 156px;
+	&:after {
+		content       : '';
+		position      : absolute;
+		top           : -5px;
+		left          : 2px;
+		width         : 4px;
+		height        : 5px;
+		border-radius : 10px 10px 0 0;
+		border        : 1px solid #c6c6c6;
+		box-shadow    : 0 0 0 1px rgba(198, 198, 198, .6);
+	}
+}
+
+.iphone-battery {
+	position      : absolute;
+	height        : 8px;
+	width         : 18px;
+	border        : 1px solid #c6c6c6;
+	border-radius : 1px;
+	right         : 6px;
+	top           : 4px;
+	&:after {
+		content  : '';
+		position : absolute;
+		height   : 2px;
+		width    : 1px;
+		border   : 1px solid #c6c6c6;
+		right    : -3px;
+		top      : 2px;
+	}
+
+	&:before {
+		content    : '';
+		position   : absolute;
+		height     : 6px;
+		width      : 16px;
+		background : #c6c6c6;
+		left       : 1px;
+		top        : 1px;
+	}
+}
+
