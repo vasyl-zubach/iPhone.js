@@ -31,7 +31,7 @@ p:last-child {
 .iphone-container {
 	float: left;
 	width: 380px;
-	padding: 20px 20px 20px 0;
+	padding: 50px 20px 20px 0;
 }
 .iphone-description {
 	width: 400px;
@@ -51,12 +51,12 @@ p:last-child {
 	border-bottom: 1px rgba(0,0,0,.1) solid;
 }
 .block-description.made_by h3 {
-	border-bottom: none;
-	margin-bottom: 0;
+	/*border-bottom: none;*/
+	/*margin-bottom: 0;*/
 }
 .btn-follow {
 	float: right;
-	margin-top: -24px;
+	margin-top: -37px;
 }
 
 .facebook_like { overflow: visible; height: 20px; width: 110px; float: left; }
